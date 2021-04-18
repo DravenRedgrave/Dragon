@@ -1,0 +1,416 @@
+html,body{
+  margin: 0px;
+  padding: 0px;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+section{
+  width: 100%;
+  height: 85vh;
+  background-image: url("../img/Dragonic.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  height: 4,5vh;
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+  background-image: linear-gradient(180deg, rgba(34,34,34,0.9490196078431373) 0%, rgba(34,34,34,0.7490196078431373) 100%);
+  z-index: 999;
+}
+
+.head{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul{
+  margin: 0px;
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+nav ul li a{
+  font-size: 13px;
+  line-height: 48px;
+  color: #c4ae78;
+  font-family: "Arial";
+  text-align: center;
+  padding-right: 60px;
+}
+
+nav ul li a:hover{
+  color: #fff;
+}
+
+.main{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-40%);
+}
+
+.main img{
+  max-width: 100%;
+}
+
+.menu-toggle{
+  display: none;
+}
+
+.menu-toggle i{
+  color: #ecd19a;
+  font-size: 40px;
+}
+
+@media (max-width:1200px) {
+  .head{
+    margin: 10px 50px;
+  }
+}
+
+
+@media (max-width:768px) {
+  nav{
+    display: none;
+  }
+  .menu-toggle{
+    display: block;
+  }
+}
+
+.hero{
+  position: relative;
+  width: 100%;
+  height: 145vh;
+  background-image: url("../img/Dark Wall BG.png");
+  background-size: cover;
+}
+
+.saparator{
+  position: absolute;
+  top: -2%;
+  left: 50%;
+  transform: translate(-50%);
+  background-image: url("../img/Saparator.png");
+  background-position: center;
+  width: 100%;
+  height: 51px;
+}
+
+.hero-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-text{
+  display: flex;
+  justify-content: center;
+  max-width: 830px;
+  padding-top: 15%;
+  margin: 0 auto;
+}
+
+.hero-text p{
+  font-size: 20px;
+  letter-spacing: 0px;
+  line-height: 32px;
+  color: #71675b;
+  font-family: "Arial";
+  text-align: center;
+}
+
+.hero-line{
+  margin-top: 3%;
+}
+
+.hero-container h2{
+  padding-top: 5%;
+  font-size: 36px;
+  letter-spacing: 0px;
+  color: #ecd19a;
+  font-weight: 400;
+  font-family: "Cinzel Decorative";
+  text-align: center;
+  filter: drop-shadow(0 0 4px #000000);
+}
+
+.hero-flex{
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero-line img{
+  max-width: 100%;
+}
+
+
+.hero-img{
+  opacity: 0.5;
+  cursor: pointer;
+  width: 270px;
+  height: 270px;
+  margin: 20px;
+  filter: drop-shadow(0 0 12.5px #000000);
+  border: 1px solid #252525;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-img:hover{
+  opacity: 1;
+  filter: drop-shadow(0 0 12.5px #663816);
+  border: 1px solid #9d9280;
+}
+
+.hero-item h3{
+  font-size: 32px;
+  letter-spacing: 0px;
+  color: #ad835a;
+  font-weight: 400;
+  font-family: "Cinzel Decorative";
+  text-align: center;
+  filter: drop-shadow(0 0 4px #383838);
+}
+
+.hero-item p{
+  max-width: 260px;
+  font-size: 17px;
+  line-height: 28px;
+  color: #71675b;
+  font-family: "Arial";
+  text-align: center;
+}
+
+@media (max-width:1200px) {
+  .hero{
+    height: auto;
+  }
+  .hero-flex{
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width:1200px) {
+  .hero{
+    height: auto;
+  }
+
+  .hero-item {
+    padding: 0px;
+    align-items: center;
+    text-align:center;
+  }
+
+  .hero-item p {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+@media (max-width:768px){
+  .hero-item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .hero-item p {
+    max-width: 100%;
+    margin: 20px;
+    padding: 0px;
+  }
+}
+
+
+.slider{
+  width: 100%;
+  height: 130vh;
+  position: relative;
+  background-image: url("../img/Dark Leather BG.png");
+}
+
+.slider-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+
+.slider-container h2{
+  font-size: 36px;
+  letter-spacing: 0px;
+  color: #ecd19a;
+  font-weight: 400;
+  font-family: "Cinzel Decorative";
+  text-align: center;
+  filter: drop-shadow(0 0 4px #000000);
+}
+
+.slider-container p{
+  max-width: 830px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  font-size: 20px;
+  letter-spacing: 0px;
+  line-height: 32px;
+  color: #71675b;
+  font-family: "Arial";
+  text-align: center;
+}
+
+.slider-content{
+
+}
+
+.slider-item{
+  width: 100%;
+  height: 65vh;
+}
+
+.slider-item img{
+  max-width: 100%;
+}
+
+@media (max-width:1200px) {
+  .slider{
+    height: auto;
+  }
+  .slider-item{
+    margin-bottom: 30px;
+  }
+}
+
+
+.weapon{
+  width: 100%;
+  height: 105vh;
+  position: relative;
+  background-image: url("../img/Dark Wall BG.png");
+  background-size: cover;
+}
+
+.weapon-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+
+.weapon-container h2{
+  font-size: 36px;
+  letter-spacing: 0px;
+  color: #ecd19a;
+  font-weight: 400;
+  font-family: "Cinzel Decorative";
+  text-align: center;
+  filter: drop-shadow(0 0 4px #000000);
+}
+
+.weapon-container p{
+  font-size: 20px;
+  letter-spacing: 0px;
+  line-height: 32px;
+  color: #71675b;
+  font-family: "Arial";
+  text-align: center;
+}
+
+.weapon-flex{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3%;
+}
+
+.weapon-item{
+  position: relative;
+  margin: 25px;
+  cursor: pointer;
+}
+
+.weapon-item img{
+  max-width: 100%;
+}
+
+.weapon-item:hover{
+  filter: drop-shadow(0 0 30px rgba(97,51,40,0.9));
+  background-color: #000000;
+}
+
+.info-weapon {
+  position: absolute;
+  background-color: #180a07;
+  bottom: 0px;
+  width: 100%;
+  opacity: 0.8;
+  padding: 15px 0px;
+}
+
+.info-content{
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+.info-content h3{
+  font-size: 20px;
+  color: #ecd19a;
+  font-weight: 400;
+  font-family: "Cinzel Decorative";
+  text-align: left;
+}
+
+
+.info-content p{
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: #ad835a;
+  font-family: "Arial";
+  text-align: left;
+}
+
+
+@media (max-width:1200px) {
+  .weapon{
+    height: auto;
+  }
+  .weapon-flex{
+    flex-wrap: wrap;
+  }
+}
+
+.feedback{
+  width: 100%;
+  height: 108vh;
+  position: relative;
+  background-image: url("../img/developers.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/ArialMT.woff2");
+}
+
+
+@font-face {
+  font-family: "Cinzel Decorative";
+  src: url("../fonts/CinzelDecorative-Regular.woff2");
+}
